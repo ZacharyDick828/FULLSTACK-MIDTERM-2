@@ -1,0 +1,54 @@
+[
+    { 
+        "id": 1, 
+        "name": "Kyle Partin", 
+        "moniker": "Cut Rugs", 
+        "art_type": "Producer/DJ", 
+        "genre": "Exp. Bass", 
+        "phone": "336-757-6980", 
+        "email": "cutrugs@gmail.com", 
+        "agency": "Undergrowth"
+    
+    },
+    { 
+        "id": 2, 
+        "name": "Marissa Mann", 
+        "moniker": "Le Flow", 
+        "art_type":"Flow", 
+        "genre": "Light Show", 
+        "phone": "828-333-2539", 
+        "email":"theflowgrowth@gmail.com", 
+        "agency": "Flowgrowth"
+       
+    },
+    { 
+        "id": 3, 
+        "name": "John Doe", 
+        "moniker": "JD", 
+        "art_type": "DJ", 
+        "genre": "Electronic Music", 
+        "phone": "828-444-2539", 
+        "email": "johndoe@gmail.com", 
+        "agency": "Overgrowth"
+    },
+    { 
+        "id": 4, 
+        "name": "Jane Doe", 
+        "moniker": "JayDee", 
+        "art_type": "Producer", 
+        "genre": "Electronic Music", 
+        "phone": "336-345-6789", 
+        "email": "jaydee@gmail.com", 
+        "agency": "Sky"
+    },
+    { 
+        "id": 5, 
+        "name": "Soki Sokoro", 
+        "moniker": "Soki", 
+        "art_type": "Producer/DJ", 
+        "genre": "Electronic Music", 
+        "phone": "336-212-2223", 
+        "email": "sokisokoro@gmail.com", 
+        "agency": "Afro Nation"
+    }
+]

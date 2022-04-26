@@ -1,28 +1,47 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.top-section{
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), url('https://www.freevector.com/uploads/vector/preview/26422/Electronic_Music_Set.jpg');
   background-repeat: no-repeat;
-  /* position: relative; */
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  background-position: right center;
-  /* background-image: url(); */
-  background-color: #deedd6;
-  background-size: auto;
+  background-size: cover;
+  height: 150vh
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App h1 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin-top: 0;
+}
+
+.title {
+  font-size: 4vw;
+  padding-top: 10px;
+  color: white;
+}
+
+.navBar ul {
+  margin: 0;
+  padding: 0;
+}
+a:link {
+  text-decoration: none;
+}
+.navBar li {
+  display: inline;
+  padding: 12px;
+  margin: 50px;
+  background-color: white;
+  border-radius: 12px;
+  justify-content: space-around;
+}
+
+li:hover {
+  background-color: black;
+}
+
+.homepage {
+  border: solid red;
+  padding-top: 100px;
+  color: white;
+  
 }
 
 .App-header {
@@ -36,15 +55,73 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.aboutpage {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 150px;
+  font-size: 1.3vw;
+  font-weight: bold;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.aboutpage h1 {
+  border-bottom: 6px white solid;
+  font-size: 5vh;
 }
+
+.Table {
+  color: white;
+}
+#title {
+  text-align: center;
+  font-family: arial, sans-serif;
+  color: white;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border: 3px solid #ddd;
+  width: 80%;
+  margin: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ffffff;
+  text-align: left;
+  padding: 8px;
+  font-size: 32px;
+}
+
+th {
+  background-color:  hsl(348, 83%, 47%);
+}
+
+td {
+  background-color: rgba(184, 181, 182, 0.699);
+}
+
+form {
+  display: flex;
+  gap: 5px;
+}
+
+form td:last-child {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form * {
+  font-size: 28px;
+}
+

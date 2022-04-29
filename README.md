@@ -1,10 +1,10 @@
-# Asheville Music Databse
+# Asheville Electronic Music Databse
 
 This project was created with the idea to store contact information for artists of all types. This would allow Event Organizers to contact artists in the area or abroad to schedule events. 
 
 ## Functionality 
 
-Users are greeted by the Home screen and then given options to learn more about the database in the `**About**` section, or head to the database in the `**Artists**` section.
+Users are greeted by the Home screen and then given options to learn more about the database in the **`About`** section, or head to the database in the **`Artists`** section.
 
 ## Artists Database
 

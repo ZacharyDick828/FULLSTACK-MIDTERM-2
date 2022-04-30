@@ -1,6 +1,6 @@
 import React from 'react'
 
-const EditArtistData = ({ editArtist, handleAddArtist, handleCancelClick }) => {
+const EditArtistData = ({ editArtist, handleEditArtist, handleCancelClick }) => {
     return (
         <tr>
             <td>
@@ -9,8 +9,8 @@ const EditArtistData = ({ editArtist, handleAddArtist, handleCancelClick }) => {
                     name="name"
                     required="required"
                     placeholder="artist name"
-                    value={editArtist.name}
-                    onChange={handleAddArtist}
+                    value={editArtist?.name}
+                    onChange={handleEditArtist}
                 ></input>
             </td>
             <td>
@@ -20,7 +20,7 @@ const EditArtistData = ({ editArtist, handleAddArtist, handleCancelClick }) => {
                     required="required"
                     placeholder="moniker"
                     value={editArtist.moniker}
-                    onChange={handleAddArtist}
+                    onChange={handleEditArtist}
                 ></input>
             </td>
             <td>
@@ -30,7 +30,7 @@ const EditArtistData = ({ editArtist, handleAddArtist, handleCancelClick }) => {
                     required="required"
                     placeholder="art-type"
                     value={editArtist.art_type}
-                    onChange={handleAddArtist}
+                    onChange={handleEditArtist}
                 ></input>
             </td>
             <td>
@@ -40,7 +40,7 @@ const EditArtistData = ({ editArtist, handleAddArtist, handleCancelClick }) => {
                     required="required"
                     placeholder="genre"
                     value={editArtist.genre}
-                    onChange={handleAddArtist}
+                    onChange={handleEditArtist}
                 ></input>
             </td>
             <td>
@@ -50,7 +50,7 @@ const EditArtistData = ({ editArtist, handleAddArtist, handleCancelClick }) => {
                     required="required"
                     placeholder="phone"
                     value={editArtist.phone}
-                    onChange={handleAddArtist}
+                    onChange={handleEditArtist}
                 ></input>
             </td>
             <td>
@@ -60,7 +60,7 @@ const EditArtistData = ({ editArtist, handleAddArtist, handleCancelClick }) => {
                     required="required"
                     placeholder="email"
                     value={editArtist.email}
-                    onChange={handleAddArtist}
+                    onChange={handleEditArtist}
                 ></input>
             </td>
             <td>
@@ -70,7 +70,7 @@ const EditArtistData = ({ editArtist, handleAddArtist, handleCancelClick }) => {
                     required="required"
                     placeholder="agency"
                     value={editArtist.agency}
-                    onChange={handleAddArtist}
+                    onChange={handleEditArtist}
                 ></input>
             </td>
             <td>
@@ -81,4 +81,4 @@ const EditArtistData = ({ editArtist, handleAddArtist, handleCancelClick }) => {
     )
 }
 
-export default EditArtistData
+export default EditArtistData;

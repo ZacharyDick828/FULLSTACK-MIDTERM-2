@@ -8,7 +8,9 @@ import EditArtistData from './EditArtistData';
 
 
 const Table = () => {
+  // store data in state--initilize useState hook with the data from mock file. setArtists updates the state
   const [artists, setArtists] = useState(data);
+  // store form values in state and update values as user types. store form values as an object and single state hook and use an event handler function to update the values
   const [addArtists, setAddArtists] = useState({
     name: '',
     moniker: '',
@@ -18,6 +20,8 @@ const Table = () => {
     email: '',
     agency: ''
   })
+
+  // state object that holds form data while editing a given row 
 
   const [editArtist, setEditArtist] = useState({
     name: '',
@@ -29,20 +33,25 @@ const Table = () => {
     agency: ''
   })
 
+  // store the id of the artist being edited in state and use the id to show edit row 
   const [editArtistId, setEditArtistId] = useState(null);
 
+  // function that gets called when the user changes values for any input. All inputs will be linked to this event handler
   const handleAddArtists = (event) => {
     event.preventDefault();
-
-    const fieldName = event.target.getAttribute('name');
+    
+// gets the name of the input that the user has changed. 'name' gets the name attribute of whichever input the user has typed into and asigns it to the fieldName variable 
+    const fieldName = event.target.getAttribute("name");
     const fieldValue = event.target.value;
 
+// make a copy of existing form data so we can change it without mutating state. spread operator to copy existing form data and asign new data to newArtistData variable
     const newArtistData = { ...addArtists };
+    // update the object with the new values 
     newArtistData[fieldName] = fieldValue;
 
     setAddArtists(newArtistData)
   };
-
+// update the state when any form values change
   const handleEditArtist = (event) => {
     event.preventDefault();
 
@@ -54,7 +63,7 @@ const Table = () => {
 
     setEditArtist(newArtistData)
   }
-
+  // function that gets called when form is submitted. id used to identify with artist is being deleted or edited
   const handleNewArtistSubmit = (event) => {
     event.preventDefault();
 
@@ -72,7 +81,7 @@ const Table = () => {
     const newArtists = [...artists, newArtist];
     setArtists(newArtists)
   };
-
+// save the edited artist data 
   const handleEditArtistSubmit = (event) => {
     event.preventDefault();
 
@@ -94,13 +103,16 @@ const Table = () => {
     newArtists[index] = editedArtist;
 
     setArtists(newArtists);
-    setEditArtist()
+    setEditArtistId(null)
 
   };
 
+  // EDIT BUTTON EVENT LISTENER
   const handleEditClick = (event, artist) => {
     event.preventDefault();
     setEditArtistId(artist.id);
+
+    // prefill row while editing artist 
 
     const formValues = {
       name: artist.name,
@@ -115,10 +127,12 @@ const Table = () => {
     setEditArtist(formValues);
   };
 
+  // CANCLE BUTTON EVENT HANDLER
   const handleCancelClick = () => {
     setEditArtistId(null)
   };
-
+// DELETE BUTTON EVENT HANDLER. 
+// function that gets called when delete button is clicked
   const handleDeleteClick = (artistId) => {
     const newArtists = [...artists];
 
@@ -146,11 +160,12 @@ const Table = () => {
             </tr>
           </thead>
           <tbody>
+            {/* render table row for each object in the array. .map function loops over the array of artists array and updates the state */}
             {artists.map((artist) => (
               <Fragment key={artist.id}>
                 {editArtistId === artist.id ? (
                   <EditArtistData editArtist={editArtist}
-                    handleEditArtists={handleEditArtist}
+                    handleEditArtist={handleEditArtist}
                     handleCancelClick={handleCancelClick}
                   />
                 ) : (
@@ -164,9 +179,12 @@ const Table = () => {
             ))}
           </tbody>
         </table>
+
+
+        {/* Adding data to the table form  */}
       </form>
 
-      <h2> Add Artist</h2>
+      <h2 className="new-artist"> Add Artist</h2>
       <form onSubmit={handleNewArtistSubmit}>
         <input
           type="text"

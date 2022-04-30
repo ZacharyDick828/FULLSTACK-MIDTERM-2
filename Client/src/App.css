@@ -3,7 +3,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url('https://www.freevector.com/uploads/vector/preview/26422/Electronic_Music_Set.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 150vh
+  height: 100vh
 }
 
 .App h1 {
@@ -76,13 +76,13 @@ li:hover {
 .app-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
   padding: 1rem;
   text-align: center;
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border: 3px solid #ddd;
   width: 80%;
   margin: auto;
+  
 }
 
 table {
@@ -109,6 +109,8 @@ td {
 form {
   display: flex;
   gap: 5px;
+  /* width: 80%; */
+
 }
 
 form td:last-child {

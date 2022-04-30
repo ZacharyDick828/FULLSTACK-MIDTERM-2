@@ -13,7 +13,7 @@
 
 .title {
   font-size: 4vw;
-  padding-top: 10px;
+  padding-top: 20px;
   color: white;
 }
 
@@ -41,7 +41,8 @@ li:hover {
 
 .homepage {
   border: solid red;
-  padding-top: 100px;
+  padding: 100px;
+  margin: 100px;
   color: white;
 }
 

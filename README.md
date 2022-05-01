@@ -16,4 +16,4 @@ Artist information can updated or corrected by clicking the `Edit` button, locat
 
 Artist information can also be deleted from the database by clicking `Delete`, located beside the `Edit` button.
 
-Please enjoy the database and use responsibly! [Placeholder DatabaseName: redirects to this page](https://github.com/ZacharyDick828/FULLSTACK-MIDTERM-2)
+Please enjoy the database and use responsibly! [Click Here](https://mern-mid-terms-front-end.netlify.app/artists)
